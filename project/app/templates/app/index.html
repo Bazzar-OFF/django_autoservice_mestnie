@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} {{ title }} :: {{ block.super }} {% endblock %}
+
+{% block content %}
+
+<div class="content">
+
+    <div class="container-fluid">
+      <div class="row">
+        <span class="align-middle">
+        <div class="row align-items-center text-center bg-dark">
+          <div class="col-sm text-white align-middle">
+            <br>
+            <h2>Наши услуги</h2>
+            <br>
+          </div>
+        </div>
+      </span>
+      </div>
+    </div>
+  <br>
+    <div class="container">
+  <div class="position-relative">
+
+
+    <div class="position-relative top-0 start-0">
+  
+        <div class="col-sm">
+  
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/car_wash.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Автомойка</h5>
+              <p class="card-text">
+              </p>
+              <a href="{% url 'car_wash' %}" class="btn btn-dark">Подробнее</a>
+            </div>
+          </div>
+  
+        </div>
+  
+    </div>
+
+    <div class="position-absolute top-0 start-50 translate-middle-x">
+
+      <div class="col-sm">
+
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/mainenance.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Техобслуживание</h5>
+            <p class="card-text">
+            </p>
+            <a href="{% url 'mainenance' %}" class="btn btn-dark">Подробнее</a>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+
+    <div class="position-absolute top-0 end-0">
+
+        <div class="col-sm">
+
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/tire_service.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Шиномонтаж</h5>
+              <p class="card-text">
+              </p>
+              <a href="{% url 'tire_service' %}" class="btn btn-dark">Подробнее</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
